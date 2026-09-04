@@ -32,13 +32,11 @@ import { ImpactAndCredibility } from './ImpactAndCredibility';
 
 interface HowItWorksPageProps {
   onNavigateToMonitor: () => void;
-  onNavigateToNetwork?: () => void;
   onOpenTerminal?: () => void;
 }
 
 export const HowItWorksPage: React.FC<HowItWorksPageProps> = ({
   onNavigateToMonitor,
-  onNavigateToNetwork,
   onOpenTerminal,
 }) => {
   const [activeStepTab, setActiveStepTab] = useState<number>(0);
@@ -122,15 +120,6 @@ export const HowItWorksPage: React.FC<HowItWorksPageProps> = ({
           </div>
 
           <div className="flex items-center gap-3 text-xs font-mono">
-            {onNavigateToNetwork && (
-              <button
-                type="button"
-                onClick={onNavigateToNetwork}
-                className="px-3 py-1.5 border border-[#444444] text-white hover:border-white text-xs font-mono font-bold uppercase tracking-wider transition-colors"
-              >
-                MP PILOT NETWORK →
-              </button>
-            )}
             {onOpenTerminal && (
               <button
                 type="button"

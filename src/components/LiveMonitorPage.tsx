@@ -30,9 +30,8 @@ import { WeeklyReportView } from './WeeklyReportView';
 
 interface LiveMonitorPageProps {
   onNavigateToProcess: () => void;
-  onNavigateToNetwork?: () => void;
-  onOpenTerminal?: () => void;
   onNavigateToLogin?: () => void;
+  onOpenTerminal?: () => void;
 }
 
 interface NodeData {
@@ -663,13 +662,13 @@ export const LiveMonitorPage: React.FC<LiveMonitorPageProps> = ({
           </div>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
-            {onNavigateToNetwork && (
+            {onNavigateToLogin && (
               <button
                 type="button"
-                onClick={onNavigateToNetwork}
+                onClick={onNavigateToLogin}
                 className="px-4 py-2.5 bg-transparent border border-[#00FF00]/40 hover:border-[#00FF00] text-[#00FF00] text-xs font-mono font-bold uppercase tracking-wider transition-colors text-center"
               >
-                MP PILOT NETWORK (247 NODES) →
+                GATEWAY LOGIN →
               </button>
             )}
             {onOpenTerminal && (
