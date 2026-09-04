@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --font-sans: 'Instrument Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-serif: 'Newsreader', Georgia, Cambria, serif;
+    --bg-canvas: #F5F2ED;
+    --color-ink: #1A1A1A;
+    --color-forest: #2D4F36;
+    --color-amber: #C88C32;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F5F2ED;
+  color: #1A1A1A;
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono);
+}
+
+.font-serif-editorial {
+  font-family: var(--font-serif);
+}
+
+/* Artistic Flair Dot Grid & Architectural Patterns */
+.tech-grid-pattern {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(26, 26, 26, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(26, 26, 26, 0.05) 1px, transparent 1px);
+}
+
+.tech-dot-pattern {
+  background-size: 10px 10px;
+  background-image: radial-gradient(#1A1A1A 1px, transparent 1px);
+}
+
+.artistic-dot-matrix {
+  background-size: 12px 12px;
+  background-image: radial-gradient(rgba(26, 26, 26, 0.15) 1px, transparent 1px);
+}
+
+.dark-grid-pattern {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Monospace numerals tabular */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Marquee Animation for Artistic Technical Tickers */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

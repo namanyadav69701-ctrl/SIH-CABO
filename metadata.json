@@ -1,0 +1,7 @@
+{
+  "name": "CABO — Distributed Solar MRV & Carbon Infrastructure",
+  "description": "Digital measurement, reporting and verification (dMRV) infrastructure connecting distributed rooftop solar with carbon markets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
